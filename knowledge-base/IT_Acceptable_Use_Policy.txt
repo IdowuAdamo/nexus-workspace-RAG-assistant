@@ -1,0 +1,32 @@
+NEXUS WORKPLACE SERVICES
+IT ACCEPTABLE USE POLICY
+Document ID: IT-SEC-002 | Version: 3.0 | Effective date: 15 August 2026
+
+1. ACCOUNT SECURITY
+Employees must use unique passwords for company accounts. Passwords must not be shared with colleagues, supervisors or external parties.
+Multi-factor authentication (MFA) must be enabled on all company email and business-critical accounts where supported.
+Employees must report suspected account compromise to the IT Service Desk immediately.
+
+2. DEVICES
+Company devices must use supported operating systems and receive security updates.
+Employees must not disable endpoint protection, firewall controls or device encryption without written authorization from IT Security.
+Lost or stolen company devices must be reported immediately, even if the device is believed to be powered off.
+
+3. DATA HANDLING
+Confidential company information must be stored only in approved company-managed services.
+Employees must not upload confidential documents to public AI tools unless the tool has been approved for that data classification.
+Files containing customer or employee personal information must be shared only with authorized recipients.
+
+4. SOFTWARE
+Software must be obtained from approved sources.
+Employees must not install unlicensed software or tools that bypass company security controls.
+Requests for new software should be submitted through the IT Service Desk.
+
+5. REMOTE WORK
+Employees should use the company-approved VPN when accessing internal systems from untrusted networks.
+Public Wi-Fi should not be used for sensitive work unless protected by the approved VPN.
+Screens must be locked when devices are unattended.
+
+6. INCIDENT REPORTING
+Report suspicious emails using the email client's phishing-report function or forward them to security@nexus.example.
+Do not click suspicious links or open unexpected attachments.
