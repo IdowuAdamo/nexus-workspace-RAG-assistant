@@ -107,3 +107,22 @@ def get_embedding_with_fallback(query: str, preferred_provider: str = "openai") 
     embedder = GeminiEmbedder()
     vector = embedder.embed_query(query)
     return vector, "gemini"
+
+
+if __name__ == "__main__":
+    # Interactive demonstration of embeddings
+    sample_text = "Employees should submit expense claims within 10 working days."
+    print("DEMONSTRATION: How Text Embeddings Work")
+    print(f"\n1. Input Text:\n   \"{sample_text}\"")
+
+    print("\n2. Generating Vector Embedding...")
+    vector, provider = get_embedding_with_fallback(sample_text)
+
+    print(f"\n   [✓] Provider used: {provider.upper()}")
+    print(f"   [✓] Embedding dimensions (length): {len(vector)} numbers")
+    print(f"   [✓] First 5 vector values: {vector[:5]}")
+    print(f"   [✓] Last 5 vector values:  {vector[-5:]}")
+    print(f"   [✓] Vector type: {type(vector[0])}")
+
+    print(f"Teaching takeaway: An embedding converts human text into a dense numerical array of {len(vector)} floating-point coordinates in vector space.")
+
