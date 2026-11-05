@@ -54,6 +54,8 @@ Powered by **ChromaDB** for vector storage, **Streamlit** for the web frontend, 
                        │
                        ▼
 [ Streamlit UI with Citations & Fallback Status Badge ]
+
+
 ```
 
 ---
@@ -168,7 +170,7 @@ OPENAI_EMBEDDING_MODEL=text-embedding-3-small
 
 GEMINI_API_KEY=your_gemini_api_key_here
 GEMINI_MODEL=gemini-1.5-flash
-GEMINI_EMBEDDING_MODEL=models/text-embedding-004
+GEMINI_EMBEDDING_MODEL=models/gemini-embedding-001
 ```
 
 > **Note**: Both keys are supported. If the OpenAI key expires or is empty, Gemini takes over automatically.

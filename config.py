@@ -35,7 +35,7 @@ DEFAULT_TOP_K = 3
 
 def has_openai_credentials() -> bool:
     """Check if OpenAI API key is present."""
-    return bool(OPENAI_API_KEY and len(OPENAI_API_KEY) > 10)
+    return bool(OPENAI_API_KEY and len(OPENAI_API_KEY) > 15)
 
 
 def has_gemini_credentials() -> bool:

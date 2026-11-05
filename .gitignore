@@ -4,8 +4,3 @@ __pycache__/
 *.pyc
 chroma_db/
 .streamlit/secrets.toml
-venv/
-__pycache__/
-*.pyc
-chroma_db/
-.streamlit/secrets.toml
