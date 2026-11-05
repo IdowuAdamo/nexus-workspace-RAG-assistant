@@ -198,6 +198,30 @@ Launch the Streamlit frontend with:
 
 ---
 
+## ☁️ Deploying to Streamlit Community Cloud
+
+To deploy directly from your GitHub repository to [Streamlit Community Cloud](https://share.streamlit.io):
+
+1. **Push your code to GitHub** (ensure `.env` is **NOT** committed, which is already handled by `.gitignore`).
+2. Log in to [Streamlit Community Cloud](https://share.streamlit.io/) and click **"Create app"**.
+3. Select your repository (`teaching-RAG`), branch (`main`), and set the **Main file path** to:
+   ```text
+   app.py
+   ```
+4. Click **Advanced settings** $\rightarrow$ **Secrets** and paste your API keys in TOML format:
+   ```toml
+   OPENAI_API_KEY = "your-actual-openai-key"
+   OPENAI_MODEL = "gpt-4o-mini"
+   OPENAI_EMBEDDING_MODEL = "text-embedding-3-small"
+
+   GEMINI_API_KEY = "your-actual-gemini-key"
+   GEMINI_MODEL = "gemini-3.5-flash-lite"
+   GEMINI_EMBEDDING_MODEL = "models/gemini-embedding-001"
+   ```
+5. Click **Deploy!** The app will install all dependencies from `requirements.txt`, initialize ChromaDB, and run automatically.
+
+---
+
 ## 🧪 Running Tests
 
 Run the test suite to verify document parsing, ChromaDB indexing, retrieval accuracy, and both LLM providers:

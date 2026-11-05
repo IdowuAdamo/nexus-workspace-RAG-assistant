@@ -3,6 +3,14 @@ Nexus Workplace Services - Policy Assistant RAG Application.
 Frontend built with Streamlit and powered by ChromaDB, OpenAI, and Google Gemini.
 """
 
+# SQLite compatibility patch for ChromaDB on Streamlit Community Cloud (Linux)
+try:
+    __import__('pysqlite3')
+    import sys
+    sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+except ImportError:
+    pass
+
 import streamlit as st
 import config
 from rag_engine import RAGEngine
